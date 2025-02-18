@@ -1,3 +1,5 @@
 ﻿using System;
-Consumer.Run();
-// Producer.Run();
+
+
+if (args[0] == "produce") Producer.Run();
+else Consumer.Run();
