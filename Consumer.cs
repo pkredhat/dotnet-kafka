@@ -10,14 +10,8 @@ class Consumer
         //string bootstrapServers = "localhost:9092";
         //string bootstrapServers = "host.containers.internal:9092";
         string bootstrapServers = Environment.GetEnvironmentVariable("KAFKA_BOOTSTRAP_SERVERS");
-        if (string.IsNullOrEmpty(bootstrapServers))
-        {
-            Console.WriteLine("KAFKA_BOOTSTRAP_SERVERS environment variable is not set.");
-        }
-        else
-        {
-            Console.WriteLine($"KAFKA_BOOTSTRAP_SERVERS: {bootstrapServers}");
-        }
+        if (string.IsNullOrEmpty(bootstrapServers))Console.WriteLine("KAFKA_BOOTSTRAP_SERVERS environment variable is not set.");
+        else Console.WriteLine($"KAFKA_BOOTSTRAP_SERVERS: {bootstrapServers}");
 
 
 
