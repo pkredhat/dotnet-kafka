@@ -14,4 +14,4 @@ components:
       mountSources: true
   - name: m2
     volume:
-      size: 1G
+      size: 1G 
