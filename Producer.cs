@@ -41,7 +41,7 @@ class Producer
             {
                 Console.WriteLine($"❌ Delivery failed: {e.Error.Reason}");
             }
-        }
+        } 
         Console.WriteLine("Kafka producer stopped.");
     }
 }
