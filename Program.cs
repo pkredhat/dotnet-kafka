@@ -10,7 +10,6 @@ class Program
             Console.WriteLine("Usage: dotnet run <produce|consume>");
             return;
         }
-
         if (args[0] == "produce")
         {
             await Producer.Run();  // ✅ Await the async method
