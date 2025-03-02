@@ -13,9 +13,6 @@ class Consumer
         if (string.IsNullOrEmpty(bootstrapServers))Console.WriteLine("KAFKA_BOOTSTRAP_SERVERS environment variable is not set.");
         else Console.WriteLine($"KAFKA_BOOTSTRAP_SERVERS: {bootstrapServers}");
 
-
-
-
         string topic = "test-topic";
         string groupId = "test-group";
 
