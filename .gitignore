@@ -29,7 +29,7 @@ https://github.com/dotnet/aspnetcore/issues/25456
 *.msm
 *.msp
 
-# Windows Installer (x64)
+# Windows Installer (x64)   
 *.x64
 
 # Windows Installer (x86)
