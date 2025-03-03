@@ -25,5 +25,9 @@ app.MapHub<KafkaHub>("/kafkahub");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapFallbackToFile("index.html"); // Serves index.html if no route matches
+});
 
 app.Run();
