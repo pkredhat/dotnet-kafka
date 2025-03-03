@@ -8,7 +8,7 @@ using Confluent.Kafka;
 public class KafkaConsumerService : BackgroundService
 {
     private readonly IHubContext<KafkaHub> _hubContext;
-    private readonly string _bootstrapServers = "localhost:9092"; // Update to your correct Kafka address
+    private readonly string _bootstrapServers = Environment.GetEnvironmentVariable("KAFKA_BOOTSTRAP_SERVERS");
     private readonly string _topic = "test-topic";
 
     public KafkaConsumerService(IHubContext<KafkaHub> hubContext)
